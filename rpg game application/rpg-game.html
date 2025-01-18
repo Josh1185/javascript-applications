@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rpg-game.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>RPG game</title>
+</head>
+<body>
+  <div class="game">
+    <div class="player-stats">
+      <span class="stat">Health: <strong><span class="health-text">100</span></strong></span>
+      <span class="stat">Attack Power: <strong><span class="attack-power-text">1</span></strong></span>
+      <span class="stat">Defense: <strong><span class="defense-text">0</span></strong></span>
+      <span class="stat">Gems: <strong><span class="gems-text">0</span></strong></span>
+    </div>
+    <div class="choices">
+      <button class="button1">Go to merchant outpost</button>
+      <button class="button2">Go to the caverns</button>
+      <button class="button3">Go to the woods</button>
+      <button class="button4">Fight werewolf (final boss)</button>
+    </div>
+    <div class="enemy-stats">
+      <span class="stat">Health: <strong><span class="enemy-health-text">15</span></strong></span>
+      <span class="stat">Attack Power: <strong><span class="enemy-attack-power-text">5</span></strong></span>
+    </div>
+    <div class="boss-stats">
+      <span class="stat">Health: <strong><span class="boss-health-text">200</span></strong></span>
+      <span class="stat">Attack Power: <strong><span class="boss-attack-power-text">35</span></strong></span>
+      <span class="stat">Reward: <strong><span class="boss-reward-text">Save the village!</span></strong></span>
+    </div>
+    <div class="text">
+      Welcome to Werewolf Repeller. Your village is being approached by a vicious werewolf and needs urgent protection.
+      The village is relying on you to defeat the werewolf. You are currently at the village. What approach would you like to take? Use buttons above.
+    </div>
+  </div>
+
+  <script type="module" src="rpg-game.js"></script>
+</body>
+</html>

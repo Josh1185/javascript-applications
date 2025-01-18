@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Barlow, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background: radial-gradient(
+    closest-corner circle at 15% 15%,
+    #ccc,
+    #ccc 20%,
+    #445 21%,
+    #223 100%
+  );
+}
+
+@keyframes borderGlow {
+  0% {
+    box-shadow: 0 0 3px 0px #ccc;
+  }
+
+  25% {
+    box-shadow: 0 0 3px 3px #ccc;
+  }
+
+  50% {
+    box-shadow: 0 0 5px 5px #ccc;
+  }
+
+  75% {
+    box-shadow: 0 0 3px 3px #ccc;
+  }
+
+  100% {
+    box-shadow: 0 0 3px 0px #ccc;
+  }
+}
+
+.game {
+  max-width: 675px;
+  max-height: 700px;
+
+  border: 2px solid black;
+
+  animation: borderGlow 6s infinite linear;
+}
+
+.player-stats {
+  padding: 10px;
+  border-bottom: 2px solid black;
+
+  background-color: rgb(24, 127, 24);
+  color: rgb(163, 244, 163)
+}
+
+.stat {
+  padding-right: 10px;
+}
+
+.choices {
+  padding: 10px;
+
+  background-color: rgb(50, 50, 50);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+}
+
+button {
+  padding: 4px 8px;
+
+  cursor: pointer;
+
+  border: 2px solid orange;
+  background: linear-gradient(
+    orange,
+    rgb(254, 214, 10)
+  );
+  transition: all 0.15s;
+}
+
+button:hover {
+  transform: scale(1.01, 1.01);
+  color: white;
+}
+
+.enemy-stats {
+  padding: 10px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+
+  background-color: rgb(195, 52, 17);
+  color: rgb(254, 212, 212);
+
+  display: none;
+}
+
+.boss-stats {
+  padding: 10px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+
+  background-color: blueviolet;
+  color: pink;
+
+  display: none;
+}
+
+.text {
+  background-color: rgb(50, 50, 50);
+  padding: 10px;
+
+  color: #fff;
+  font-style: italic;
+}
